@@ -26,7 +26,7 @@ Voici les composants clés du dépôt visualisés dans les diagrammes de structu
 
 Développer le `Field_validator` pour les modèles afin de garantir l'intégrité des données.
 
-### Étape 2 : Tests unitaires
+### Étape 2 : Tests 
 
 Implémenter des tests unitaires utilisant `Unittest`, `Pytest`, et `Mock` pour s'assurer que les fonctionnalités fonctionnent comme prévu.
 
