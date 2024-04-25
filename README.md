@@ -33,9 +33,10 @@ Implémenter des tests unitaires utilisant `Unittest`, `Pytest`, et `Mock` pour 
 ### Étape 3.1 : Déclaration des constantes `Constantes.py`
 
 ```python
-connect = 'mongodb'
+connect = "mongodb://mongodb:27017"
 db = "MagasinBurger"
-collection = "Burgers"
+collection1 = "Burgers"
+collection2 = "Evaluateurs"
 ```
 
 ### Étape 3.2 : Script pour peupler la BD `seeder.py` ou `script.py`
