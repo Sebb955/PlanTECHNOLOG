@@ -129,8 +129,10 @@ services:
     image: mongo:latest
     ports:
       - 27017:27017
+
   app:
     build: .
+    image: sebby75/image_burger  # Nom d'image configuré pour Docker Hub (image: username/nomImage)
     ports:
       - 8763:8763
     depends_on:
@@ -154,20 +156,25 @@ CMD sh -c 'python3 seeder.py && uvicorn api:app --host 127.0.0.1 --port 8763'
 
 ### Test :
 
-#On vérifie la base de donnée du `seeder.py`/`script.py` :
+En 1er on lance le docker :
+```python
+docker-compose up 
+```
 
+On vérifie la base de donnée du `seeder.py`/`script.py` :
 ```python
 use Basedonnée
 db.collection.find()
 ```
 
-#Invite de commande(`cmd`) : (peut changer)
-```python
-docker-compose up 
+### **ETAPE FINAL**
+Push l'image sur `Docker Hub`
+```java
+docker push sebby75/image_burger //docker push username/nomImage
 ```
 
+-------------------------
 
-MANQUE DOCKER HUB 
 
 ### [AIDE] Commande docker :
 
